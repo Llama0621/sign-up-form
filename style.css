@@ -1,0 +1,139 @@
+@font-face {
+    font-family: Norse;
+    src: url(fonts/Norse.otf);
+}
+
+@font-face {
+    font-family: Norse;
+    src: url(fonts/Norsebold.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+html, body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    display: flex;
+    min-height: 125vh;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+#text {
+    font-family: Norse;
+    color: white;
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+#odinContainer {
+    display: flex;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 125px;
+    margin-top: 150px;
+    align-items: center;
+}
+
+footer {
+    margin-top: auto;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 0.8rem;
+    font-family: 'Roboto';
+}
+
+#right {
+    flex: 1;
+}
+
+#speech {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: #f2f2f2;
+    padding: 140px 50px 50px 50px;
+}
+
+#first {
+    margin-top: 0;
+}
+
+#do {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 0 0 0 50px;
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 70px;
+    font-family: 'Roboto';
+    font-size: 0.85rem;
+    padding: 0 0 40px 50px;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+}
+
+form > div > input {
+    width: 225px;
+    height: 20px;
+    border: 2px solid #E5E7EB;
+}
+
+form > div > input:user-invalid {
+    outline: none;
+    border: 2px solid lightcoral;
+    box-shadow: 1px 1px red;
+}
+
+form > div > input:focus {
+    outline: none;
+    border: 2px solid lightblue;
+    box-shadow: 1px 1px blue;
+}
+
+#create {
+    font-family: 'Roboto';
+    font-size: 1rem;
+    background-color: #f2f2f2;
+    padding: 30px 0 170px 50px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3)
+}
+
+button {
+    background-color: #596D48;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: #f2f2f2;
+    font-size: 1rem;
+}
